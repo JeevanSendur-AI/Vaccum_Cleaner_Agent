@@ -1,0 +1,31 @@
+class UtilityBasedAgent:
+    state = initial_state
+    while not stopping_condition:
+        actions = generate_possible_actions(state)
+        best_action = None
+        best_utility = -inf
+        
+        for action in actions:
+            utility = calculate_utility(action, state)
+            if utility > best_utility:
+                best_utility = utility
+                best_action = action
+        
+        execute_action(best_action)
+        state = update_state() 
+
+    return "Agent finished its task"
+
+def generate_possible_actions(state):
+    return actions_list
+
+def calculate_utility(action, state):
+    return utility_value
+
+def execute_action(action):
+
+def update_state():
+    return new_state
+
+def stopping_condition():
+    return condition_met

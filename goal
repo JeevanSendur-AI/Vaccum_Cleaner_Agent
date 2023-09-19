@@ -1,0 +1,22 @@
+class GoalBasedAgent:
+    state = initial_state
+    goal = desired_goal
+
+    while not goal_reached:
+        action = choose_action(state, goal)
+        execute_action(action)
+        state = update_state()  
+        goal_reached = check_goal_reached(state, goal)
+
+    return "Goal achieved"
+
+def choose_action(state, goal):
+    return selected_action
+
+def execute_action(action):
+
+def update_state():
+    return new_state
+
+def check_goal_reached(state, goal):
+    return state == goal
